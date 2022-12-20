@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./assets/css/style.css --style compressed",
     "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sopicard/Ohmyfood_oc-project_sp.git"
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/sopicard/Ohmyfood_oc-project_sp/issues"
   },
-  "homepage": "https://github.com/sopicard/Ohmyfood_oc-project_sp#readme"
+  "homepage": "https://github.com/sopicard/Ohmyfood_oc-project_sp#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
 }

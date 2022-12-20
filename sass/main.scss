@@ -1,4 +1,12 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
-@import "./components/img";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./layout/header";
+@import "./layout/form";
+@import "./homepage.scss";
+@import "../src/page1/page1.scss";
+@import "../src/page2/page2.scss";
+@import "../src/page3/page3.scss";
+@import "../src/page4/page4.scss";

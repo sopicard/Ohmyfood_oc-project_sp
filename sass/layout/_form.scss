@@ -1,0 +1,23 @@
+.location__form {
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    padding: 1rem;
+    width: 100%;
+}
+
+#location__label {
+    border: none;
+    background-color: #f3f3f3 ;
+    font-size: 1rem;
+    text-align: center;   
+}
+
+.location__div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 3rem;
+    gap: 1rem;
+    }
