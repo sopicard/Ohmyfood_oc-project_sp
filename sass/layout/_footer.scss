@@ -1,0 +1,34 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #353535;
+    color: $color-white;
+    max-width: 500px;
+    margin: auto;
+    .footer__logo {
+        font-family: "Shrikhand-Regular", cursive;
+        font-size: larger;
+        margin-bottom: 1rem;
+    }
+    .footer__purpose, .footer__partners {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0.5rem;
+        gap: 1rem;
+    }
+    .footer__partners .footer__i {
+        font-size: x-small;
+        align-self: center;
+    }
+    .footer__contact {
+        .footer__p {
+            margin-bottom: 0.5rem;
+        }
+        .footer__a {
+            margin-bottom: 2rem;
+            text-decoration: none;
+            color: $color-white;
+        }
+    }
+}

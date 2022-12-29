@@ -1,8 +1,43 @@
 .location__div {
+    max-width: 500px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: #fafafa;
     padding: 3rem;
     gap: 1rem;
+}
+   
+.operating {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    max-width: 500px;
+    margin: auto;
+    .operating__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column; 
+        gap: 1.5rem;       
     }
+}    
+
+.restaurants {
+    padding: 2rem 1rem;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;    
+    max-width: 500px;
+    margin: auto;
+    article {
+    background-color: $color-white;
+    border-radius: 1rem;
+    }
+}
+
+
+
+
