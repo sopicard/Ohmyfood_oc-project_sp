@@ -1,15 +1,13 @@
 .restaurants__card { 
     display: flex;
     flex-direction: column;
-    color: $color-black;
+    color: black;
     text-decoration: none;
     position: relative;
-    max-width: 500px;
     border-radius: 1rem;
-    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1);
+    @include lighter-shadow;
     .restaurants__img {
     width: 100%;
-    max-width: 500px;
     aspect-ratio: 2/1;
     border: 0 solid transparent;
     border-bottom: none;
@@ -22,9 +20,10 @@
     right: 0.75rem;
     padding: 5px 10px;
     border-radius: 0.15rem;
-    background-color: #99E2D0;
-    color: #1b6150;
+    background-color: $color-tertiary;
+    color: darken($color:$color-tertiary, $amount:30%);
     font-size: smaller;
+    font-weight: bold;
     }
     .restaurants__infos {
         display: flex;

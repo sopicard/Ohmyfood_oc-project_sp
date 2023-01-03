@@ -1,0 +1,63 @@
+.logo {
+    display: flex;
+    a{
+        align-self: center;
+        margin-left: 1rem;
+        color: black;
+    }
+    img {
+        margin: auto;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    position: relative;
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 2/1;
+    }
+    &__div-text{
+        background-color: #fafafa;
+        border: 0 solid transparent;
+        border-bottom: none;
+        border-radius: 2rem 2rem 0 0;
+        position: relative;
+        top: -1rem;
+        .menu__text {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 1rem 0rem;
+            width: 100%;  
+            .menu__title {
+                display: flex;
+                gap: 2rem;
+                .restaurants__i {
+                    align-self: center; 
+                    font-size: larger;    
+                }
+            }
+        }
+        .menu__dishes {
+            margin: 2rem 0rem;
+            .menu__h2 {
+                margin-left: 1rem;
+                padding-bottom: 0.2rem;
+                border-bottom: 4px solid $color-tertiary;
+                width: 40px;
+            }  
+        }
+    }
+}
+
+.div-button {
+    display: flex;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+
+

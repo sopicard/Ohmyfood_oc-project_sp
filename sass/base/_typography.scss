@@ -13,6 +13,31 @@ body {
     font-size: 16px;
 }
 
+.menu{
+    &__h1 {
+    font-family: "Shrikhand-Regular", cursive, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    }
+    &__h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+}
+
+.dish{
+    &__h3 {
+        font-size: 1rem;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+    &__p {
+        font-size: 0.9rem;
+    }
+}
+
 .footer__logo {
-    font-family: "Shrikhand", sans-serif;
+    font-family: "Shrikhand-Regular", cursive, sans-serif;
 }

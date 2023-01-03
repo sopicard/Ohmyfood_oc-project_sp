@@ -3,32 +3,36 @@
     flex-direction: column;
     padding: 2rem;
     background-color: #353535;
-    color: $color-white;
-    max-width: 500px;
+    color: white;
     margin: auto;
-    .footer__logo {
+    position: relative;
+    &__logo {
         font-family: "Shrikhand-Regular", cursive;
         font-size: larger;
         margin-bottom: 1rem;
     }
-    .footer__purpose, .footer__partners {
+    &__purpose, &__partners {
         display: flex;
         flex-direction: row;
         margin-bottom: 0.5rem;
         gap: 1rem;
     }
-    .footer__partners .footer__i {
+    &__partners &__i {
         font-size: x-small;
         align-self: center;
     }
-    .footer__contact {
+    &__contact {
         .footer__p {
             margin-bottom: 0.5rem;
         }
         .footer__a {
             margin-bottom: 2rem;
             text-decoration: none;
-            color: $color-white;
+            color: white;
+            &:hover {
+                padding-bottom: 0.1rem;
+                border-bottom: 2px solid white;
+            }
         }
     }
 }

@@ -1,6 +1,4 @@
 .location__div {
-    max-width: 500px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -14,9 +12,7 @@
     flex-direction: column;
     padding: 2rem 1rem;
     gap: 2rem;
-    max-width: 500px;
-    margin: auto;
-    .operating__list {
+    &__list {
         list-style-type: none;
         display: flex;
         flex-direction: column; 
@@ -30,10 +26,8 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;    
-    max-width: 500px;
-    margin: auto;
     article {
-    background-color: $color-white;
+    background-color: white;
     border-radius: 1rem;
     }
 }

@@ -1,0 +1,35 @@
+.dish {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    margin: 1rem;
+    @include lighter-shadow;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        gap: 0.3rem;
+        padding: 0.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .dish__h3, .dish__p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &__price {
+        align-self: flex-end;
+        padding: 0.8rem;
+        margin-left: auto;
+    }
+    &__selection {
+        background-color: $color-tertiary;
+        padding: 1rem;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        color: white;
+        margin-left: 0.7rem;
+    }
+}
