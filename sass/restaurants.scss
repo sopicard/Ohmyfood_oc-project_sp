@@ -16,15 +16,13 @@
     background-color: #fafafa;
     position: relative;
     &__img {
-        width: 100%;
-        object-fit: cover;
-        aspect-ratio: 2/1;
+        @include img-appearance;
     }
     &__div-text{
         background-color: #fafafa;
         border: 0 solid transparent;
         border-bottom: none;
-        border-radius: 2rem 2rem 0 0;
+        border-radius: 1.5rem 1.5rem 0 0;
         position: relative;
         top: -1rem;
         .menu__text {
@@ -37,7 +35,7 @@
                 gap: 2rem;
                 .restaurants__i {
                     align-self: center; 
-                    font-size: larger;    
+                    font-size: x-large;    
                 }
             }
         }

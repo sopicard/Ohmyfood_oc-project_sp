@@ -7,12 +7,11 @@
     border-radius: 1rem;
     @include lighter-shadow;
     .restaurants__img {
-    width: 100%;
-    aspect-ratio: 2/1;
+    @include img-appearance;    
     border: 0 solid transparent;
     border-bottom: none;
     border-radius: 1rem 1rem 0 0;
-    object-fit: cover;
+    
     }
     .restaurants__span {
     position: absolute;
@@ -33,11 +32,23 @@
         }
         .restaurants__location {
             padding: 0 0 0.8rem 0.5rem;
-            font-weight: 100;}
+            font-weight: 100;
+        }
         .restaurants__heart {
             display: flex;
             align-items: center;
             margin-left: 40%;
+            .restaurants__i {
+                align-self: center;
+                font-size: x-large;
+            }
+            // change color for linear-gradient
+            .full {
+                color: $color-primary;
+            }
         }
     }
 }
+
+
+

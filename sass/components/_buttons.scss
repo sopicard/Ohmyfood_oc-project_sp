@@ -2,13 +2,13 @@
     text-decoration: none;
     margin: auto;
     color: white;
-    @include project__btn-gradient;
     padding: 15px 35px;
     border: $color-secondary;
     border-radius: 25px;
-    @include lighter-shadow;
     position: relative;
     z-index: 1;
+    @include project__btn-gradient;
+    @include lighter-shadow;
     //Replacement background-color property in hover because triggers a new paint calculation. Opacity allows transitions without calculations
     &:hover {
         &::after {
@@ -16,19 +16,11 @@
         }
     }
     &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
         border: $color-secondary;
         border-radius: 25px;
-        @include shadow;
         background: linear-gradient(170deg, lighten($color-secondary, 3) 10%, lighten($color-primary, 5) 90%);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
+        @include shadow;
+        @include btn-hover;
     }
 }
 
@@ -42,30 +34,25 @@
         background-color: #fafafa;
         border: #fafafa;
         border-radius: 15px;
-        @include lighter-shadow;
         margin-left: 1rem;
-        transition: background-color 250ms;
         position: relative;
         z-index: 1;
+        @include lighter-shadow;
+        transition: background-color 250ms;
         &:hover {
+            .operating__i {
+                color: $color-primary;
+            }
             &::after {
                 opacity: 1;
             }
         }
         &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
             border: $color-secondary;
             border-radius: 15px;
-            @include shadow;
             background: lighten($color-primary, 36%);
-            opacity: 0;
-            z-index: -1;
-            transition: opacity 250ms;
+            @include shadow;
+            @include btn-hover;
         }
         .operating__nb {
             padding: 3px 8px;
