@@ -3,26 +3,13 @@
     flex-direction: column;
     color: black;
     text-decoration: none;
-    position: relative;
     border-radius: 1rem;
     @include lighter-shadow;
     .restaurants__img {
     @include img-appearance;    
     border: 0 solid transparent;
     border-bottom: none;
-    border-radius: 1rem 1rem 0 0;
-    
-    }
-    .restaurants__span {
-    position: absolute;
-    top: 1rem;
-    right: 0.75rem;
-    padding: 5px 10px;
-    border-radius: 0.15rem;
-    background-color: $color-tertiary;
-    color: darken($color:$color-tertiary, $amount:30%);
-    font-size: smaller;
-    font-weight: bold;
+    border-radius: 1rem 1rem 0 0;   
     }
     .restaurants__infos {
         display: flex;
@@ -33,19 +20,6 @@
         .restaurants__location {
             padding: 0 0 0.8rem 0.5rem;
             font-weight: 100;
-        }
-        .restaurants__heart {
-            display: flex;
-            align-items: center;
-            margin-left: 40%;
-            .restaurants__i {
-                align-self: center;
-                font-size: x-large;
-            }
-            // change color for linear-gradient
-            .full {
-                color: $color-primary;
-            }
         }
     }
 }

@@ -1,0 +1,23 @@
+.restaurants__heart {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 5%;
+    .restaurants__i {
+        align-self: center;
+        font-size: x-large;
+        position: relative;          
+    }    
+    .full {
+        position: absolute;
+        color: transparent;
+        background: linear-gradient(170deg, $color-secondary 0%, $color-primary 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: opacity 800ms;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

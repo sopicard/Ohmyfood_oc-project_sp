@@ -5,7 +5,7 @@
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
 }
 @mixin shadow {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.1);
 }
 @mixin project__btn-gradient {
     background: linear-gradient(170deg, $color-secondary 0%, $color-primary 100%);
@@ -26,3 +26,4 @@
     aspect-ratio: 2/1;
     object-fit: cover;
 }
+
