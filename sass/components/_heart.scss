@@ -1,0 +1,32 @@
+.restaurants__heart {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 5%;
+    .empty {
+        position: relative;
+        opacity: 1;
+        font-size: x-large;
+    }
+    .full {
+        position: absolute;
+        opacity: 0;
+        color: transparent;
+        background: linear-gradient(170deg, $color-secondary 0%, $color-primary 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: x-large;
+    }   
+    .restaurants__i-box {
+        &:hover {
+            .empty {
+                opacity: 0;
+                transition: opacity 1s cubic-bezier(.84,-0.06,.94,.44);
+            }
+            .full {
+                opacity: 1;
+                transition: opacity 1s cubic-bezier(.84,-0.06,.94,.44);
+            }
+        }
+    }
+}
