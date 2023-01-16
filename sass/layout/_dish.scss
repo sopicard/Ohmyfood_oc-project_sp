@@ -29,7 +29,6 @@
     &__selection {
         display: flex;   
         width: 0;
-        visibility: hidden;
         background-color: $color-tertiary;
         border-radius: 0 15px 15px 0;
         flex-wrap: wrap;
@@ -38,17 +37,19 @@
         color: white;
         margin-left: 1rem;
         transition: all 500ms ease-in-out;
+        overflow: hidden;
         .dish__i {
             font-size: x-large;
-            transition: transform 600ms ease-in-out;
+            overflow: hidden;
         }
     }
     &:hover {
         .dish__selection {
             width: 70px;
-            visibility: visible;
+            overflow: visible;
             .dish__i {
-            transform: rotate(360deg);
+                transition: transform 600ms ease-in-out;
+                transform: rotate(360deg);
             }
         }
     }

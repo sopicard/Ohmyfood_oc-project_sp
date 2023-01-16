@@ -1,0 +1,36 @@
+// keyframes for loading spinner
+@keyframes waiting {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      letter-spacing: 2rem;
+      transform: perspective(500px) translateZ(300px);
+    }
+  }
+
+@keyframes disappearance {
+    0% {
+        opacity: 0.9;
+        visibility: visible;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+//keyframe for appearance of staggered menus
+@keyframes dish__appear {
+  0% {
+      transform: translateY(2rem);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0rem);
+      opacity: 1;
+  }
+}

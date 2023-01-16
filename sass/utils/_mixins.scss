@@ -1,15 +1,23 @@
+// shadow of location__form
 @mixin darker-shadow {
     box-shadow: inset 0px 5px 10px -5px rgba(72,72,72,0.57);
 }
-@mixin lighter-shadow {
-    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
-}
+
+// shadow gradient for img and buttons
 @mixin shadow {
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.1);
 }
+
+@mixin lighter-shadow {
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+}
+
+// color gradient button pink/purple
 @mixin project__btn-gradient {
     background: linear-gradient(170deg, $color-secondary 0%, $color-primary 100%);
 }
+
+// lighting at hover crossing
 @mixin btn-hover {
     content: "";
     position: absolute;
@@ -21,6 +29,7 @@
     z-index: -1;
     transition: opacity 250ms;
 }
+
 @mixin img-appearance {
     width: 100%;
     aspect-ratio: 2/1;

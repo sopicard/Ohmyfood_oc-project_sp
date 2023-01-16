@@ -1,0 +1,36 @@
+.loader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10000;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    animation: disappearance 4s linear;
+    &__items {
+        width: 250px;
+        height: 700px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        animation: waiting 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 4 alternate both;
+        .loader__span {
+            &.s1 {
+                color: $color-primary;
+                text-shadow: $color-primary-lighten 3px 3px 0px, gray 5px 5px 2px;
+            }
+            &.s2 {
+                color: $color-secondary;
+                text-shadow: $color-secondary-lighten 3px 3px 0px, gray 5px 5px 2px;
+            }
+            &.s3 {
+                color: $color-tertiary;
+                text-shadow: $color-tertiary-lighten 3px 3px 0px, gray 5px 5px 2px;
+            }
+        }    
+    }
+ }
+
