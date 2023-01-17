@@ -11,7 +11,7 @@
 
 ## 🔗 Links
 
-[![portfolio](https://img.shields.io/badge/web_project-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/sopicard/Ohmyfood_oc-project_sp.git)
+[![portfolio](https://img.shields.io/badge/web_project-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://sopicard.github.io/Ohmyfood_oc-project_sp/)
 
 ## Installation
 
