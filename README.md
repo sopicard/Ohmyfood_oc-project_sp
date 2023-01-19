@@ -28,13 +28,17 @@ terminal
 package.jason file :
 
 ```bash
- "scripts": "sass--watch" iso test
+ iso test "scripts": "sass --watch ./sass/main.scss:./assets/css/style.css --style compressed",
+ "prefix" : "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
+ "browserslist" : "last 4 versions"
 ```
 
 terminal
 
 ```bash
  npm run sass
+ ctrl C
+ npm run prefix
 ```
 
 ## Color Reference
