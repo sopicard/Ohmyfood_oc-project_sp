@@ -25,7 +25,7 @@ terminal
   npm install --save-dev sass
 ```
 
-package.jason file :
+package.json file :
 
 ```bash
  iso test "scripts": "sass --watch ./sass/main.scss:./assets/css/style.css --style compressed",
