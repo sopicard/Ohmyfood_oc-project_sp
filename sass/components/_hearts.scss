@@ -20,11 +20,11 @@
         &:hover {
             .empty {
                 opacity: 0;
-                transition: opacity 900ms cubic-bezier(.84,-0.06,.94,.44);
+                transition: opacity 500ms cubic-bezier(.18,.42,.99,.02);
             }
             .full {
                 opacity: 1;
-                transition: opacity 900ms cubic-bezier(.84,-0.06,.94,.44);
+                transition: opacity 500ms cubic-bezier(.18,.42,.99,.02);
             }
         }
     }

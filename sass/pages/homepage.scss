@@ -9,27 +9,39 @@
    
 .operating {
     display: flex;
-    flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     gap: 2rem;
+    flex-wrap: wrap;
+    &__title {
+        width: 100%;
+    }
     &__list {
+        width: 100%;
         list-style-type: none;
         display: flex;
-        flex-direction: column; 
-        gap: 1.5rem;       
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;     
     }
 }    
 
 .restaurants {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     background-color: #fafafa;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;    
-    .restaurants__new {
+    gap: 2rem; 
+    flex-wrap: wrap;
+    &__title {
+        width: 100%;
+    }   
+    .restaurants__article {
     background-color: white;
     border-radius: 1rem;
     position: relative;
+    flex: 40% 1 0;
+    min-width: 300px;
+    }
+    .new {
     &::before {
         position: absolute;
         content: "Nouveau";

@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 600px;
+.body {
     margin: auto;
     position: relative;
+}
+
+.body__restaurants {
+    max-width: 900px;
 }
 
 
