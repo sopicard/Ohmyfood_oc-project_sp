@@ -1,11 +1,10 @@
 // keyframes for loading page
 @keyframes waiting {
     0% {
-      transform: translateZ(0);
+      transform: rotate(0);
     }
     100% {
-      letter-spacing: 2rem;
-      transform: perspective(500px) translateZ(300px);
+      transform: rotate(360deg);
     }
   }
 

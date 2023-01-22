@@ -28,14 +28,21 @@
         .menu__text {
             display: flex;
             flex-direction: column;
-            padding: 1.5rem 1rem 0rem;
+            padding: 1.5rem 1rem;
             width: 100%;  
             .menu__title {
                 display: flex;
+                max-width: 1200px;
+                margin: auto;
+                .menu__h1 {
+                    white-space: nowrap;
+                    margin-right: 90px;
+                }
             }
         }
         .menu__dishes {
-            margin: 2rem 0rem;
+            max-width: 768px;
+            margin: auto;
             animation: dish__appear 1s ease-in-out both;
             &:nth-child(2) {
                 animation-delay: 1s;
@@ -59,6 +66,6 @@
 .div-button {
     display: flex;
     margin: auto;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 

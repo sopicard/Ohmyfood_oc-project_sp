@@ -6,7 +6,7 @@
     background: white;
     opacity: 0;
     visibility: hidden;
-    animation: disappearance 4s linear;
+    animation: disappearance 3s linear;
     &__items {
         width: 250px;
         height: 700px;
@@ -16,19 +16,24 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        animation: waiting 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 4 alternate both;
-        .loader__span {
+        animation: waiting 1.5s ease-in-out 3 alternate both; 
+        .loader__span {   
             &.s1 {
-                color: $color-primary;
-                text-shadow: $color-primary-lighten 3px 3px 0px, gray 5px 5px 2px;
+                @include span-appearance;
+                background-color: $color-secondary;
+                border: $color-secondary;
             }
             &.s2 {
-                color: $color-secondary;
-                text-shadow: $color-secondary-lighten 3px 3px 0px, gray 5px 5px 2px;
+                width: 40px;
+                height: 40px;
+                @include project__btn-gradient;
+                border: $color-secondary;
+                border-radius: 50%;
             }
             &.s3 {
-                color: $color-tertiary;
-                text-shadow: $color-tertiary-lighten 3px 3px 0px, gray 5px 5px 2px;
+                @include span-appearance;
+                background-color: $color-tertiary;
+                border: $color-tertiary;
             }
         }    
     }
